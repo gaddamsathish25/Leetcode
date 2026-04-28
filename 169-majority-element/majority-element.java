@@ -13,15 +13,15 @@ class Solution {
                 count--;
             }
         }
-        int cnt = 0;
-        for (int i = 0; i < n; i++) {
-            if (nums[i]==elment) {
-                cnt++;
-            }
-        }
-        if (cnt > (nums.length / 2)) {
-            return elment;
-        }
+        // int cnt = 0;
+        // for (int i = 0; i < n; i++) {
+        //     if (nums[i]==elment) {
+        //         cnt++;
+        //     }
+        // }
+        // if (cnt > (nums.length / 2)) {
+        //     return elment;
+        // }
         return elment;
     }
 }
