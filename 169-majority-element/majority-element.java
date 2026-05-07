@@ -33,30 +33,39 @@ class Solution {
 
         //using hashmap
 
-        HashMap<Integer,Integer> hm=new HashMap<>();
+        // HashMap<Integer,Integer> hm=new HashMap<>();
 
-        for(int i=0;i<nums.length;i++){
-            int val=nums[i];
-            if(hm.containsKey(val)){
-                int prev=hm.get(val);
-                hm.put(val,prev+1);
-            }else{
-                hm.put(val,1);
-            }
-        }
+        // for(int i=0;i<nums.length;i++){
+        //     int val=nums[i];
+        //     if(hm.containsKey(val)){
+        //         int prev=hm.get(val);
+        //         hm.put(val,prev+1);
+        //     }else{
+        //         hm.put(val,1);
+        //     }
+        // }
 
-        int element=0;
+        // int element=0;
 
-        int max=0;
+        // int max=0;
 
-        for(int x:hm.keySet()){
-            if(hm.get(x)>max){
-                max=hm.get(x);
-                element=x;
-            }
-        }
+        // for(int x:hm.keySet()){
+        //     if(hm.get(x)>max){
+        //         max=hm.get(x);
+        //         element=x;
+        //     }
+        // }
 
-        return element;
+        // return element;
+
+
+
+        // By using sorting 
+
+        Arrays.sort(nums);
+        int n=nums.length/2;
+
+        return nums[n];
         
     }
 }
