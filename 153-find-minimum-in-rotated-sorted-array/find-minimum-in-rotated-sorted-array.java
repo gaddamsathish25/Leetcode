@@ -13,8 +13,8 @@ class Solution {
 
             }
             else{
-                     min =Math.min(min,nums[mid]);
-                   high=mid-1;
+                    min =Math.min(min,nums[mid]);
+                    high=mid-1;
             }
         }
         return min;
